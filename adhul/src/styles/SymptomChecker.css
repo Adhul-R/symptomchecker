@@ -1,0 +1,110 @@
+/* Symptom Checker Container */
+.symptom-checker-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  padding: 20px;
+  width:100vw;
+}
+
+/* Main Box */
+.symptom-checker-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 450px;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading */
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2a5298;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0056b3;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #f8f9fa;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover {
+  border-color: #003f7f;
+}
+
+/* Button Styling */
+.health-advice-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0056b3;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.health-advice-btn:hover {
+  background: #003f7f;
+  transform: scale(1.05);
+}
+
+.health-advice-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Health Advice Box */
+.health-advice-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f8ff;
+  border-left: 5px solid #0056b3;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
